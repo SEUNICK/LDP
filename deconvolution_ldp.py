@@ -21,7 +21,7 @@ def get_est_noise_psd(pure_p, pure_q, domain_size, m, n_type="frequency"):
 
 def direct_wiener(h: np.ndarray, g: np.ndarray, est_psd_n: np.ndarray, f0: np.ndarray = None):
     """
-    :param h: transfer Vector h
+    :param h: transfer vector h
     :param g: total gathered suggest outputs
     :param est_psd_n: the estimate psd of noise
     :param f0: the estimated initial value of vector f, default is none
@@ -47,7 +47,7 @@ def direct_wiener(h: np.ndarray, g: np.ndarray, est_psd_n: np.ndarray, f0: np.nd
 
 def improved_iterative_wiener(h: np.ndarray, g: np.ndarray, est_psd_n: np.ndarray, iter_time, f0: np.ndarray = None):
     """
-    :param h: transfer Vector h
+    :param h: transfer vector h
     :param g: total gathered suggest outputs
     :param est_psd_n: the estimate psd of noise
     :param iter_time: iteration times
@@ -82,7 +82,7 @@ def improved_iterative_wiener(h: np.ndarray, g: np.ndarray, est_psd_n: np.ndarra
 
 def average_multiple_random_permuted(h: np.ndarray, g: np.ndarray, est_psd_n: np.ndarray, map_time):
     """
-    :param h: transfer Vector h
+    :param h: transfer vector h
     :param g: total gathered suggest outputs
     :param est_psd_n: the estimate psd of noise
     :param map_time: random permuted times
